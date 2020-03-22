@@ -29,6 +29,6 @@ const removeUser = id => {
 
 const getUser = id => users.find(user => user.id === id);
 
-const getUserInRoom = room => users.filter(user => user.room === room);
+const getUsersInRoom = room => users.filter(user => user.room === room);
 
-moddule.exports = { addUser, removeUser, getUser, getUserInRoom };
+moddule.exports = { addUser, removeUser, getUser, getUsersInRoom };
